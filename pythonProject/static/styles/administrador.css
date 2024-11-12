@@ -1,0 +1,9 @@
+
+
+        @import url(../styles/home.css);
+
+        .titulo{
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+        }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/styles/administrador.css">
+
+
+             <title></title>
+</head>
+
+<body>
+
+<h1 class="titulo"> administrador
+</h1>
+
+ <div id="form_fundo">
+    <h1>QUE LARICA</h1>
+    <h2>CADASTRO DE USUÁRIO</h2>
+
+  <div id="form_frente">
+       {% set menssage = get_flashed_messages() %}
+     {% if menssage %}
+         <div class="flash_alerta">
+             {{menssage[0]}}
+         </div>
+     {% endif %}
+    <form action="/cadastrarUsuario" method="post"> <br>
+        <label for="nome">NOME</label>
+        <input type="text" name="nome" id="nome" required placeholder="DIGITE SEU NOME"> <br> <br>
+        <label for="senha" id="senha" >SENHA</label>
+        <input type="text" name="senha" id="senha"  required placeholder="DIGITE A SENHA"> <br> <br>
+         <button type="submit" id="btn_esquecisenha">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>esqueci minha senha
+            </button>
+
+        <button type="submit" id="btn_login">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>Cadastrar
+
+
+
+        </button>
+
+
+    </form>
+  </div>
+ </div>
+</body>
+
+</html>
